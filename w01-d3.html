@@ -1,0 +1,280 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>W01-D3 一座教堂，死于中途加高</title>
+<style>
+:root{--paper:#faf8f4;--ink:#1a1815;--muted:#6f6a62;--acc:#b03a2e;--line:#ddd6c9;--soft:#f2ede3;}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,"PingFang SC","Noto Serif SC",Georgia,serif;
+     font-size:17px;line-height:2.0;-webkit-font-smoothing:antialiased;}
+.wrap{max-width:700px;margin:0 auto;padding:40px 24px 72px;}
+.top{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--line);
+     padding-bottom:12px;margin-bottom:22px;font-size:12px;letter-spacing:.1em;color:var(--muted);}
+.top .l{color:var(--acc);font-weight:700;}
+h1{font-size:31px;line-height:1.44;margin:0 0 14px;font-weight:700;}
+h2{font-size:19px;margin:36px 0 12px;font-weight:700;}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 22px;}
+.tags span{font-size:11.5px;color:#6b5f4e;background:var(--soft);border:1px solid var(--line);
+           border-radius:20px;padding:3px 10px;}
+.lede{font-size:16px;color:#4d4841;padding-left:15px;border-left:3px solid var(--acc);margin:0 0 28px;}
+p{margin:0 0 16px;text-align:justify;}
+strong{font-weight:700;color:#000;}
+em{font-style:normal;background:linear-gradient(transparent 60%,#f0d9d3 60%);padding:0 1px;}
+figure{margin:26px 0;}
+figure img{width:100%;border-radius:4px;display:block;}
+figcaption{font-size:12px;color:var(--muted);margin-top:9px;line-height:1.6;}
+figure.svgfig{background:#fdfcf9;border-radius:4px;padding:14px 10px;margin:26px 0;}
+figure.svgfig svg{width:100%;height:auto;display:block;}
+.pull{border-left:3px solid var(--acc);padding:2px 0 2px 16px;margin:24px 0;font-size:19px;line-height:1.85;}
+.terms{border:1px solid var(--line);border-radius:6px;padding:20px 20px 6px;margin:30px 0;background:#fff;}
+.terms .tag,.more .tag,.task .tag{font-size:11px;letter-spacing:.15em;font-weight:700;display:block;margin-bottom:9px;}
+.terms .tag{color:var(--acc);}
+.term{padding:0 0 12px;margin:0 0 12px;border-bottom:1px dashed var(--line);}
+.term:last-child{border-bottom:none;}
+.term .zh{font-size:15px;font-weight:700;}
+.term .en{font-size:12px;color:#8a7d66;font-style:italic;margin-left:5px;}
+.term .def{font-size:13.5px;color:#565049;line-height:1.7;margin-top:2px;}
+.task{margin:30px 0;padding:18px 20px;background:#fff;border:1px solid var(--line);border-radius:6px;}
+.task .tag{color:#6b8a63;}
+.task p{margin:0;font-size:14px;line-height:1.85;color:#4a453e;}
+.more{margin:30px 0;padding:16px 18px;background:#fff;border:1px solid var(--line);border-radius:6px;}
+.more .tag{color:var(--acc);}
+.more div{font-size:13px;line-height:1.75;color:#4a453e;margin-bottom:7px;}
+.more .lv{display:inline-block;font-size:10px;color:#fff;background:#8a7d66;border-radius:2px;padding:0 5px;margin-right:6px;}
+.more .lv.a{background:#6b8a63;} .more .lv.c{background:var(--acc);}
+.refs{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);}
+.refs h3{font-size:11px;letter-spacing:.16em;color:var(--muted);margin:0 0 10px;font-weight:700;}
+.refs ol{margin:0;padding-left:18px;font-size:12.5px;color:#565049;line-height:1.8;}
+.refs li{margin-bottom:4px;}
+.archive{margin-top:22px;padding:13px 15px;background:var(--soft);border-radius:4px;font-size:11.5px;color:#6b6255;line-height:1.75;}
+.archive b{color:#3f382e;}
+.endnote{margin-top:30px;padding-top:18px;border-top:1px dashed var(--line);color:var(--muted);font-size:15px;}
+</style></head><body><div class="wrap">
+
+<div class="top"><span class="l">W01 · D3　建筑・结构　【重】</span><span>约 3000 字 · 16 分钟</span></div>
+
+<h1>一座教堂，<br>死于中途加高</h1>
+<div class="tags"><span># 哥特</span><span># 飞扶壁</span><span># 设计变更</span><span># 博韦</span></div>
+<p class="lede">1284 年 11 月 29 日，法国博韦，刚站了十二年的拱顶塌了。它建了四十七年。塌的原因不是“太高”，是“建到一半改了高度”。</p>
+
+<p>你走进过哥特教堂吗？抬头那一下，脖子会酸。</p>
+
+<p>我第一次进去，想的不是上帝，是：这些石头怎么没塌下来。</p>
+
+<p>今天要讲的这座，塌了。不是因为地震，不是因为战争。是因为有人在工地上做了一个决定。</p>
+
+<h2>先看三个数字</h2>
+
+<figure class="svgfig"><svg viewBox="0 0 620 300" xmlns="http://www.w3.org/2000/svg">
+  <text x="46" y="34" font-family="serif" font-size="16" fill="#1a1815">中殿与唱诗席的拱顶高度</text>
+  <text x="46" y="53" font-family="sans-serif" font-size="9.5" fill="#9a917f" letter-spacing="1">VAULT HEIGHT, METRES</text>
+  <line x1="70" y1="250" x2="570" y2="250" stroke="#e5dfd2" stroke-width="1"/>
+  <rect x="110" y="185" width="86" height="65" fill="#c9c2b2"/>
+  <text x="153" y="176" text-anchor="middle" font-family="serif" font-size="13" fill="#1a1815">35</text>
+  <text x="153" y="270" text-anchor="middle" font-family="serif" font-size="11" fill="#6f6a62">巴黎圣母院</text>
+  <rect x="270" y="171" width="86" height="79" fill="#b5ab97"/>
+  <text x="313" y="162" text-anchor="middle" font-family="serif" font-size="13" fill="#1a1815">42.3</text>
+  <text x="313" y="270" text-anchor="middle" font-family="serif" font-size="11" fill="#6f6a62">亚眠</text>
+  <rect x="430" y="160" width="86" height="90" fill="#b03a2e" opacity="0.85"/>
+  <text x="473" y="151" text-anchor="middle" font-family="serif" font-size="13" fill="#b03a2e" font-weight="bold">48.5</text>
+  <text x="473" y="270" text-anchor="middle" font-family="serif" font-size="11" fill="#6f6a62">博韦</text>
+  <line x1="70" y1="160" x2="570" y2="160" stroke="#b03a2e" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="556" y="150" text-anchor="end" font-family="serif" font-size="10" fill="#b03a2e">多出 6.2 米</text>
+</svg>
+<figcaption>高度数据见 MDPI Heritage 2025 年对博韦的测绘研究；巴黎与亚眠取中殿，博韦取唱诗席。</figcaption></figure>
+
+<p>博韦比第二名高六米。听上去不多。</p>
+
+<p>但你要理解，在这套体系里，高度不是线性加法的。荷载随高度涨，侧推力随高度涨，而抗推的结构构件必须同步加粗——加粗又增加自重，自重又要更多支撑。</p>
+
+<p>这是一个正反馈。每加一米，代价都比上一米大。</p>
+
+<p>所以六米的差距，不是 6%，是“把安全裕度用光”的意思。</p>
+
+<h2>力去哪儿了</h2>
+
+<p>要讲塌，得先讲它为什么不塌。</p>
+
+<p>罗马式的做法很笨也很可靠：把墙砌厚。墙自己扛住拱顶推过来的水平力，所以墙必须又厚又实，窗户只能开小洞。</p>
+
+<p>哥特换了个思路：<strong>让墙不承重</strong>。</p>
+
+<p>三个动作配合：</p>
+
+<p><strong>尖拱</strong>。半圆拱的推力方向比较平，水平分量大；尖拱可以做得更陡，推力方向更竖直，水平分量小。同样的高度，尖拱对墙的“推”更少。</p>
+
+<p><strong>肋架拱</strong>。把拱顶的重量集中到几根肋上，肋再把力送到柱子。石头从“一层壳”变成“一副骨架”。</p>
+
+<p><strong>飞扶壁</strong>。这是最关键的一步。墙被拱顶往外推，那就从外面顶住它——一道斜的石头拱把推力接过去，再通过外侧的墩子传到地面。</p>
+
+<p>力没有消失，它被改道了。</p>
+
+<figure class="svgfig"><svg viewBox="0 0 620 290" xmlns="http://www.w3.org/2000/svg">
+  <text x="46" y="32" font-family="serif" font-size="16" fill="#1a1815">力的改道：从墙里，到墙外</text>
+  <text x="46" y="51" font-family="sans-serif" font-size="9.5" fill="#9a917f" letter-spacing="1">LOAD PATH</text>
+
+  <text x="150" y="86" text-anchor="middle" font-family="serif" font-size="12" fill="#6f6a62">罗马式</text>
+  <rect x="102" y="100" width="28" height="140" fill="#c9c2b2"/>
+  <rect x="170" y="100" width="28" height="140" fill="#c9c2b2"/>
+  <path d="M102 100 Q150 62 198 100" fill="none" stroke="#8a8172" stroke-width="3"/>
+  <path d="M104 118 L100 150" stroke="#b03a2e" stroke-width="2" marker-end="url(#a1)"/>
+  <path d="M196 118 L200 150" stroke="#b03a2e" stroke-width="2" marker-end="url(#a1)"/>
+  <text x="150" y="264" text-anchor="middle" font-family="serif" font-size="10.5" fill="#6f6a62">厚墙硬扛，窗只能小</text>
+
+  <text x="430" y="86" text-anchor="middle" font-family="serif" font-size="12" fill="#6f6a62">哥特式</text>
+  <rect x="392" y="100" width="12" height="140" fill="#5a5347"/>
+  <rect x="456" y="100" width="12" height="140" fill="#5a5347"/>
+  <path d="M392 100 L424 66 L456 100" fill="none" stroke="#8a8172" stroke-width="2.5"/>
+  <path d="M392 108 L360 190" stroke="#b03a2e" stroke-width="2.4"/>
+  <path d="M456 108 L488 190" stroke="#b03a2e" stroke-width="2.4"/>
+  <rect x="346" y="190" width="26" height="50" fill="#8a8172"/>
+  <rect x="476" y="190" width="26" height="50" fill="#8a8172"/>
+  <text x="424" y="264" text-anchor="middle" font-family="serif" font-size="10.5" fill="#6f6a62">墙变薄，力绕到外面</text>
+
+  <line x1="290" y1="70" x2="290" y2="250" stroke="#e5dfd2" stroke-width="1" stroke-dasharray="4 5"/>
+  <text x="46" y="284" font-family="serif" font-size="11" fill="#b03a2e">同一份推力，两种处理：一种自己扛，一种外包出去。</text>
+</svg>
+<figcaption>剖面示意，非按比例。红色为侧推力方向。</figcaption></figure>
+
+<p>墙体一旦不承重，就可以开大窗。窗一大，彩色玻璃进来，光成了建筑的一部分。</p>
+
+<p>这才是哥特真正的革命——<em>不是建得高，是墙卸任了</em>。高只是副产品。</p>
+
+<h2>然后有人改了高度</h2>
+
+<p>博韦 1225 年开工。主教米洛参加过第四次十字军，见过世面，也见过权力长什么样。他要一座“基督教世界最高”的教堂。</p>
+
+<p>工程分两期，中间因为和国王路易九世闹翻，资金断了六年。1272 年，唱诗席完工，拱顶 48.5 米，比第二名亚眠高出六米多。</p>
+
+<p>十二年后，1284 年 11 月 29 日，唱诗席中段的高拱塌了，连带几道飞扶壁。</p>
+
+<p>为什么？</p>
+
+<p>一份 2024 年的岩土工程研究给出了一个很朴素的答案。它翻检了当时的施工记录和砌体，结论是：<strong>问题不在高度本身，在施工中途把拱顶抬高了几米</strong>。</p>
+
+<p>下面的柱子、扶壁、基础，都是按原来的高度设计的。上部改了，下部没改。</p>
+
+<figure class="svgfig"><svg viewBox="0 0 620 280" xmlns="http://www.w3.org/2000/svg">
+  <text x="46" y="32" font-family="serif" font-size="16" fill="#1a1815">改了上面，没改下面</text>
+  <text x="46" y="51" font-family="sans-serif" font-size="9.5" fill="#9a917f" letter-spacing="1">DESIGN CHANGE IN SITU</text>
+
+  <text x="170" y="82" text-anchor="middle" font-family="serif" font-size="12" fill="#6f6a62">原设计</text>
+  <line x1="110" y1="220" x2="230" y2="220" stroke="#8a8172" stroke-width="3"/>
+  <line x1="122" y1="220" x2="122" y2="128" stroke="#5a5347" stroke-width="8"/>
+  <line x1="218" y1="220" x2="218" y2="128" stroke="#5a5347" stroke-width="8"/>
+  <path d="M122 128 Q170 96 218 128" fill="none" stroke="#8a8172" stroke-width="2.5"/>
+  <text x="170" y="246" text-anchor="middle" font-family="serif" font-size="10.5" fill="#6f6a62">柱高与拱高匹配</text>
+
+  <text x="450" y="82" text-anchor="middle" font-family="serif" font-size="12" fill="#6f6a62">施工中</text>
+  <line x1="390" y1="220" x2="510" y2="220" stroke="#8a8172" stroke-width="3"/>
+  <line x1="402" y1="220" x2="402" y2="128" stroke="#5a5347" stroke-width="8"/>
+  <line x1="498" y1="220" x2="498" y2="128" stroke="#5a5347" stroke-width="8"/>
+  <path d="M402 128 Q450 70 498 128" fill="none" stroke="#b03a2e" stroke-width="3"/>
+  <line x1="402" y1="128" x2="498" y2="128" stroke="#c9c2b2" stroke-width="1" stroke-dasharray="3 4"/>
+  <text x="450" y="120" text-anchor="middle" font-family="serif" font-size="10" fill="#b03a2e">↑ 抬高数米</text>
+  <text x="450" y="246" text-anchor="middle" font-family="serif" font-size="10.5" fill="#b03a2e">柱子照旧，推力变大</text>
+
+  <line x1="310" y1="70" x2="310" y2="255" stroke="#e5dfd2" stroke-width="1" stroke-dasharray="4 5"/>
+  <text x="46" y="272" font-family="serif" font-size="11" fill="#b03a2e">同一个工地，两套假设。塌的是接缝处。</text>
+</svg>
+<figcaption>示意：拱顶抬高后，拱脚推力方向更平，而原有柱与扶壁未同步加强。</figcaption></figure>
+
+<p>你也许会想：不就几米吗，石头那么结实。</p>
+
+<p>问题恰恰在于，石头最怕的不是压，是<strong>被推</strong>。石材抗压强度极高，抗拉几乎为零。拱顶越高，拱脚处的推力方向越接近水平，对柱子形成的倾覆力矩越大。</p>
+
+<p>柱子还是原来的柱子，力却变了个方向。</p>
+
+<p>这就像你把一根立着的筷子换成斜着压——同样的力，结果完全不同。</p>
+
+<h2>四家吵架</h2>
+
+<p>关于 1284 年到底怎么塌的，一百多年来没有定论。四位学者给出了四种解释，而且互相拆台。</p>
+
+<figure class="svgfig"><svg viewBox="0 0 620 330" xmlns="http://www.w3.org/2000/svg">
+  <text x="46" y="32" font-family="serif" font-size="16" fill="#1a1815">同一堆石头，四种死因</text>
+  <text x="46" y="51" font-family="sans-serif" font-size="9.5" fill="#9a917f" letter-spacing="1">FOUR DIAGNOSES</text>
+
+  <rect x="46" y="70" width="256" height="104" fill="#fff" stroke="#ddd6c9"/>
+  <text x="60" y="94" font-family="serif" font-size="12" font-weight="bold" fill="#1a1815">维奥莱-勒-杜克 · 1860s</text>
+  <text x="60" y="118" font-family="serif" font-size="11" fill="#4a453e">细石柱受压屈曲，砂浆被压碎。</text>
+  <text x="60" y="140" font-family="serif" font-size="11" fill="#8a8172">解释很直观，但没算过力。</text>
+
+  <rect x="318" y="70" width="256" height="104" fill="#fff" stroke="#ddd6c9"/>
+  <text x="332" y="94" font-family="serif" font-size="12" font-weight="bold" fill="#1a1815">海曼 · 1960s</text>
+  <text x="332" y="118" font-family="serif" font-size="11" fill="#4a453e">石材抗压近乎无限，不可能压碎。</text>
+  <text x="332" y="140" font-family="serif" font-size="11" fill="#8a8172">是几何失稳，不是材料破坏。</text>
+
+  <rect x="46" y="188" width="256" height="104" fill="#fff" stroke="#b03a2e"/>
+  <text x="60" y="212" font-family="serif" font-size="12" font-weight="bold" fill="#b03a2e">马克与沃尔夫 · 1976</text>
+  <text x="60" y="236" font-family="serif" font-size="11" fill="#4a453e">光弹性模型显示：风在迎风柱上产生拉力。</text>
+  <text x="60" y="258" font-family="serif" font-size="11" fill="#8a8172">十二年反复摇摆，疲劳累积。</text>
+
+  <rect x="318" y="188" width="256" height="104" fill="#fff" stroke="#ddd6c9"/>
+  <text x="332" y="212" font-family="serif" font-size="12" font-weight="bold" fill="#1a1815">萨尔瓦多里 · 反驳</text>
+  <text x="332" y="236" font-family="serif" font-size="11" fill="#4a453e">丙烯酸模型是整块材料。</text>
+  <text x="332" y="258" font-family="serif" font-size="11" fill="#8a8172">真教堂是几百块弱粘结的石头。</text>
+
+  <text x="46" y="318" font-family="serif" font-size="11" fill="#6f6a62">争论的不是事实，是模型能不能代表事实。</text>
+</svg>
+<figcaption>观点整理自 Murray (1989)、Heyman (1966)、Mark &amp; Wolfe (1976)、Salvadori 的公开评论。</figcaption></figure>
+
+<p>这四个人吵的其实不是同一个问题。</p>
+
+<p>前两位在争“材料坏没坏”，第三位在说“不是材料的事，是风”，第四位在说“你那个实验模型根本不像真建筑”。</p>
+
+<p>最后这一句最狠。它不是在反驳结论，是在质疑方法能不能支撑结论。</p>
+
+<p>到 21 世纪，有限元分析重新算了一遍，风载假说得到了更多支持。但你要注意：<em>支持不等于证明</em>。没有当年的记录，谁都只能从石头本身倒推。</p>
+
+<h2>我的判断</h2>
+
+<p>博韦的故事常被讲成“野心的代价”：中世纪人狂妄，想跟上帝比高，结果被重力教训。</p>
+
+<p>我觉得这个讲法偷懒。它把一个具体的工程失误，说成了一个抽象的道德寓言。</p>
+
+<p>真实的情况更枯燥，也更有用：<strong>这是一个变更管理失败</strong>。</p>
+
+<p>设计改了，配套没改。上部加高，下部照旧。这种事在今天依然天天发生。</p>
+
+<p>你所在的行业里，一个参数中途调整，一套图纸沿用旧版，一个“先这样，回头再核”——每一次都是在制造博韦。</p>
+
+<p>差别只在于，石头不会当场说话，它会在十二年后说话。</p>
+
+<p class="endnote">我原来以为哥特讲的是信仰。后来发现，它讲的是一群人对“力”的理解到了什么程度，以及他们对“改了要重算”这件事有多诚实。</p>
+
+<div class="task"><span class="tag">动手 · 5 分钟</span>
+<p>翻一份你手上正在用的图纸或计算书，找一个“后来改过、但附近没跟着改”的地方。找不到也没关系——找不到本身就是一个结论。</p></div>
+
+<div class="terms"><span class="tag">术语锚点</span>
+<div class="term"><span class="zh">飞扶壁</span><span class="en">flying buttress</span>
+<div class="def">把拱顶侧推力从墙体引到外部墩子的斜向石构件。使墙体脱离承重职能，从而能开大窗。</div></div>
+<div class="term"><span class="zh">肋架拱</span><span class="en">rib vault</span>
+<div class="def">以石肋为骨架、肋间填薄板的拱顶做法。荷载沿肋集中传递，是“骨架化”的关键。</div></div>
+<div class="term"><span class="zh">侧推力</span><span class="en">lateral thrust</span>
+<div class="def">拱在竖向荷载下对支座产生的水平分力。拱越扁平、拱顶越高，水平分量越大，对支撑越不利。</div></div>
+<div class="term"><span class="zh">高宽比</span><span class="en">height-to-width ratio</span>
+<div class="def">拱顶高度与跨度之比。沙特尔约 2.3、兰斯约 2.5、亚眠约 2.8、博韦约 3.3，数值越高越接近稳定极限。</div></div>
+<div class="term"><span class="zh">设计变更</span><span class="en">design change</span>
+<div class="def">施工或设计过程中对已定方案的修改。风险不在变更本身，而在变更未传导到关联构件与计算书。</div></div>
+</div>
+
+<div class="more"><span class="tag">延伸</span>
+<div><span class="lv">原始</span>Murray, S. (1989). <i>Beauvais Cathedral: Architecture of Transcendence</i>. Princeton University Press. —— 目前最完整的博韦研究。</div>
+<div><span class="lv a">进阶</span>Heyman, J. (1966). The stone skeleton. <i>International Journal of Solids and Structures</i>, 2(2), 249–279. —— 砌体结构“只受压”理论的奠基文章。</div>
+<div><span class="lv c">争议</span>Mark, R. &amp; Wolfe, M. (1976). Wind loading on Gothic structures. 见 <i>Light, Wind, and Structure</i>；对模型方法的批评见 Salvadori 的相关评论。</div>
+</div>
+
+<div class="refs"><h3>引用与材料</h3><ol>
+<li>Murray, S. (1989). <i>Beauvais Cathedral: Architecture of Transcendence</i>. Princeton University Press.</li>
+<li>Heyman, J. (1966). The stone skeleton. <i>International Journal of Solids and Structures</i>, 2(2), 249–279.</li>
+<li>Mark, R. &amp; Wolfe, M. (1976). Photoelastic analysis of Gothic cathedral structures. 相关方法与结论见 Mark, <i>Light, Wind, and Structure</i> (1990).</li>
+<li>关于 1284 年事故的岩土与结构复核：<i>Proceedings of the XVIII ECSMGE</i> (2024), “Cathédrale de Beauvais: les accidents structurels des XIIIe et XVIe siècles eurent-ils une origine géotechnique?”</li>
+<li>高度与比例数据：MDPI <i>Heritage</i> (2025), “Beauvais Cathedral: The Ambition, Collapse and Legacy of Gothic Engineering”, 表 1。</li>
+<li>“施工中途抬高拱顶数米”一项，引自上述 2024 年 ECSMGE 论文对砌体与施工记录的复核，属该文作者判断，非学界共识。</li>
+<li>配图全部由本文绘制，为示意性剖面，未按真实比例。</li>
+</ol></div>
+
+<div class="archive"><b>归档</b>　W03 建筑 ／ 结构・工程史　·　检索词：哥特、飞扶壁、博韦、侧推力、设计变更<br>
+<b>系列</b>　W01-D3　·　下一篇 W01-D4 一个镜头怎么决定你站谁那边</div>
+
+</div></body></html>
