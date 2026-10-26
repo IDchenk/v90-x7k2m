@@ -1,0 +1,155 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>W01-D1 夜空为什么是黑的</title>
+<style>
+:root{--paper:#faf8f4;--ink:#1a1815;--muted:#6f6a62;--acc:#b03a2e;--line:#ddd6c9;--soft:#f2ede3;}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,"PingFang SC","Noto Serif SC",Georgia,serif;
+     font-size:17px;line-height:2.0;-webkit-font-smoothing:antialiased;}
+.wrap{max-width:700px;margin:0 auto;padding:40px 24px 72px;}
+.top{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--line);
+     padding-bottom:12px;margin-bottom:22px;font-size:12px;letter-spacing:.1em;color:var(--muted);}
+.top .l{color:var(--acc);font-weight:700;}
+h1{font-size:30px;line-height:1.45;margin:0 0 14px;font-weight:700;}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 22px;}
+.tags span{font-size:11.5px;color:#6b5f4e;background:var(--soft);border:1px solid var(--line);
+           border-radius:20px;padding:3px 10px;}
+.lede{font-size:16px;color:#4d4841;padding-left:15px;border-left:3px solid var(--acc);margin:0 0 28px;}
+p{margin:0 0 19px;text-align:justify;}
+strong{font-weight:700;color:#000;}
+em{font-style:normal;background:linear-gradient(transparent 60%,#f0d9d3 60%);padding:0 1px;}
+figure{margin:26px 0;}
+figure img{width:100%;border-radius:4px;display:block;background:#fff;}
+figcaption{font-size:12px;color:var(--muted);margin-top:9px;line-height:1.6;}
+figure.svgfig{background:#fdfcf9;border-radius:4px;padding:14px 8px;margin:26px 0;}
+figure.svgfig svg{width:100%;height:auto;display:block;}
+.against{background:var(--soft);padding:20px 22px;margin:28px 0;border-radius:3px;border-left:3px solid #9c8f7a;}
+.against .tag,.judge .tag,.open .tag,.ask .tag,.terms .tag,.more .tag{font-size:11px;letter-spacing:.15em;font-weight:700;display:block;margin-bottom:9px;}
+.against .tag{color:#7a6d58;} .against p:last-child{margin-bottom:0;}
+.judge{border-top:2px solid var(--ink);border-bottom:1px solid var(--line);padding:20px 0;margin:30px 0;font-size:18px;}
+.judge .tag{color:var(--acc);}
+.open{border:1px dashed #b8ad99;padding:20px 22px;margin:28px 0;border-radius:3px;}
+.open .tag{color:#8a7d66;} .open p:last-child{margin-bottom:0;}
+.terms{border:1px solid var(--line);border-radius:6px;padding:20px 20px 6px;margin:30px 0;background:#fff;}
+.terms .tag{color:var(--acc);}
+.term{padding:0 0 12px;margin:0 0 12px;border-bottom:1px dashed var(--line);}
+.term:last-child{border-bottom:none;}
+.term .zh{font-size:15px;font-weight:700;}
+.term .en{font-size:12px;color:#8a7d66;font-style:italic;margin-left:5px;}
+.term .def{font-size:13.5px;color:#565049;line-height:1.7;margin-top:2px;}
+.ask{background:#1f1c18;color:#f6f2ea;padding:24px;margin:32px 0;border-radius:5px;}
+.ask .tag{color:#e0897c;} .ask p{margin:0;color:#f6f2ea;font-size:17px;line-height:1.9;}
+.more{margin:30px 0;padding:16px 18px;background:#fff;border:1px solid var(--line);border-radius:6px;}
+.more .tag{color:var(--acc);}
+.more div{font-size:13px;line-height:1.75;color:#4a453e;margin-bottom:7px;}
+.more .lv{display:inline-block;font-size:10px;color:#fff;background:#8a7d66;border-radius:2px;padding:0 5px;margin-right:6px;}
+.more .lv.a{background:#6b8a63;} .more .lv.c{background:var(--acc);}
+.refs{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);}
+.refs h3{font-size:11px;letter-spacing:.16em;color:var(--muted);margin:0 0 10px;font-weight:700;}
+.refs ol{margin:0;padding-left:18px;font-size:12.5px;color:#565049;line-height:1.8;}
+.refs li{margin-bottom:4px;}
+.archive{margin-top:22px;padding:13px 15px;background:var(--soft);border-radius:4px;font-size:11.5px;color:#6b6255;line-height:1.75;}
+.archive b{color:#3f382e;}
+a{color:var(--acc);}
+</style></head><body><div class="wrap">
+
+<div class="top"><span class="l">W01 · D1　天文・宇宙学　【中】</span><span>约 1500 字 · 9 分钟</span></div>
+
+<h1>夜空为什么是黑的</h1>
+<div class="tags"><span># 奥伯斯佯谬</span><span># 表面亮度</span><span># 红移</span><span># 宇宙学</span></div>
+<p class="lede">这个问题有正确答案，但流传更广的是那个错误答案。它真正教给我们的，不是宇宙学，是「什么算一个解释」。</p>
+
+<figure>
+<img src="https://images-assets.nasa.gov/image/PIA04921/PIA04921~medium.jpg" alt="仙女座星系">
+<figcaption>仙女座星系，距离约 250 万光年。NASA/JPL-Caltech</figcaption>
+</figure>
+
+<p>先把它说严格。设想一个无限大、均匀、永恒、静止的宇宙。你站在其中，向任意方向看，视线延长出去，迟早会落在一颗恒星的表面——因为恒星均匀分布，视线扫过的体积随距离立方增长，恒星数量也随立方增长，两者恰好抵消。于是每一条视线都终结于一颗恒星，整个天空被恒星表面铺满，亮度不低于太阳表面。夜空应该亮到看不见单颗星星，地球应该被烤干。</p>
+
+<p>这是奥伯斯在 1823 年写下的推论。在此之前，开普勒在 1610 年致伽利略的信里已经注意到了这个问题，但他给的答案也不对。</p>
+
+<p>最流行的错误答案是：星际尘埃挡住了远处的光。这个解释我高中时也信，直到知道尘埃被照亮以后自己也会发光。</p>
+
+<p>尘埃吸收光子会升温，升温后辐射。它挡得住可见光，挡不住红外。你没法用「遮挡」消灭能量，只能转移它。</p>
+
+<p>正确答案有两半，而教科书通常只讲一半。</p>
+
+<p><strong>第一半：宇宙有年龄。</strong>约 138 亿年，光只来得及走这么远，可观测宇宙是有限的。<strong>第二半：宇宙在膨胀。</strong>远方天体发出的光被红移，光子能量按 (1+z) 摊薄，而表面亮度按 (1+z)⁴ 衰减。</p>
+
+<p>只讲第一半，你会遇到一个尴尬：如果只是「有限但很大」，靠近边缘的恒星应该显得很亮，夜空仍不该这么黑。是红移把亮度按下去了。</p>
+
+<figure class="svgfig">
+<svg viewBox="0 0 620 272" xmlns="http://www.w3.org/2000/svg">
+  <text x="46" y="36" font-family="serif" font-size="16" fill="#1a1815">同样是「一格天区」，远处的星更多</text>
+  <text x="46" y="56" font-family="sans-serif" font-size="9.5" fill="#9a917f" letter-spacing="1">EQUAL SOLID ANGLE</text>
+
+  <rect x="56" y="86" width="168" height="120" fill="none" stroke="#ddd6c9" stroke-width="1" stroke-dasharray="5 4"/>
+  <circle cx="140" cy="146" r="27" fill="#b03a2e" opacity="0.9"/>
+  <text x="140" y="226" text-anchor="middle" font-family="serif" font-size="11" fill="#6f6a62">距离 d</text>
+
+  <line x1="246" y1="146" x2="352" y2="146" stroke="#ddd6c9" stroke-width="1"/>
+  <polygon points="352,146 344,142 344,150" fill="#ddd6c9"/>
+  <text x="299" y="137" text-anchor="middle" font-family="serif" font-size="11" fill="#9a917f">2d</text>
+
+  <rect x="386" y="86" width="168" height="120" fill="none" stroke="#ddd6c9" stroke-width="1" stroke-dasharray="5 4"/>
+  <circle cx="414" cy="120" r="9" fill="#b03a2e" opacity="0.85"/>
+  <circle cx="466" cy="112" r="8" fill="#b03a2e" opacity="0.85"/>
+  <circle cx="500" cy="158" r="9" fill="#b03a2e" opacity="0.85"/>
+  <circle cx="440" cy="176" r="8" fill="#b03a2e" opacity="0.85"/>
+  <circle cx="524" cy="114" r="7" fill="#b03a2e" opacity="0.85"/>
+  <text x="470" y="226" text-anchor="middle" font-family="serif" font-size="11" fill="#6f6a62">距离 2d</text>
+
+  <line x1="46" y1="242" x2="574" y2="242" stroke="#e5dfd2" stroke-width="1"/>
+  <text x="46" y="260" font-family="serif" font-size="11.5" fill="#b03a2e">单颗暗到四分之一，但数量多四倍。每一格的总亮度不变。</text>
+</svg>
+
+<figcaption>同样的视角大小，远处看到的星更多、更暗。两者相抵，天区总亮度不变——这才是「夜空该是亮的」的严格版本。</figcaption></figure>
+
+<p>这里有个精确的反转：严格说夜空并不是黑的。它有一个 2.725 K 的背景——宇宙微波背景。只是不在可见光波段。所以准确的表述是：<em>夜空在可见光波段是暗的，在微波波段是亮的，而且亮得极其均匀。</em></p>
+
+<div class="against"><span class="tag">替反方说话</span>
+<p>有人说这是伪问题：前提本来就不成立（宇宙并非无限、永恒、静止），所以谈不上「佯谬」。这个反驳在逻辑上完全成立，但它抹掉了这件事的价值。它的价值不在「揭示矛盾」，而在提供了一个<strong>观测约束</strong>——用「夜空有多亮」这个每晚都看得见的事实，去限制宇宙模型的参数。用日常现象约束宏大模型，这是物理学最漂亮的手法之一。</p>
+</div>
+
+<div class="judge"><span class="tag">我的判断</span>
+这个问题的教益不在宇宙学，在方法论：它示范了<strong>如何把一个背景变成问题</strong>。夜空是黑的，人类看了几十万年，没人觉得需要解释，直到有人问「为什么不是亮的」。科学史上相当一部分进步，来自把习以为常的东西重新当成待解释的现象。反过来也成立：一个人如果从不觉得身边有什么奇怪，他的思考就停在「背景」这一层，进不到「问题」。
+</div>
+
+<div class="open"><span class="tag">我没想清的地方</span>
+<p>为什么教科书普遍只讲「宇宙有年龄」，几乎不提红移那一半？表面理由是教学成本，(1+z)⁴ 需要一点广义相对论的铺垫。但我觉得还有一层：我们习惯用<strong>边界</strong>解释问题（有限、有起点），不习惯用<strong>度规</strong>解释问题（空间本身在变）。前者是常识语言，后者要换一套坐标。这可能不只是物理教学的偏好，而是认知的默认设置——人喜欢墙，不喜欢尺子会伸缩。</p>
+</div>
+
+<div class="terms"><span class="tag">术语锚点</span>
+<div class="term"><span class="zh">奥伯斯佯谬</span><span class="en">Olbers' paradox</span>
+<div class="def">夜空亮度与「静态无限宇宙」模型的矛盾。Olbers 于 1823 年正式提出，开普勒 1610 年已注意到。</div></div>
+<div class="term"><span class="zh">表面亮度</span><span class="en">surface brightness</span>
+<div class="def">单位立体角内的辐射通量。静态欧氏空间中与距离无关，是判断「距离—红移」关系的核心量，参见 Tolman 表面亮度检验（1930）。</div></div>
+<div class="term"><span class="zh">红移</span><span class="en">redshift z</span>
+<div class="def">1+z = λ观测/λ发射。膨胀宇宙中表面亮度按 (1+z)⁴ 衰减：两个因子来自能量降低，两个来自时间膨胀与波段变窄。</div></div>
+<div class="term"><span class="zh">宇宙微波背景</span><span class="en">CMB</span>
+<div class="def">温度 2.72548 ± 0.00057 K 的黑体辐射（Fixsen 2009），宇宙早期复合时期遗留，是「夜空其实是亮的」在物理上的落点。</div></div>
+</div>
+
+<div class="ask"><span class="tag">给你的问题</span>
+<p>如果夜空是被「时间」变黑的，不是被「距离」变暗的——那么「看远处就是看过去」这句话，在什么意义上会误导人？</p>
+</div>
+
+<div class="more"><span class="tag">延伸</span>
+<div><span class="lv">原始</span>Olbers, H. W. M. (1826). Über die Durchsichtigkeit des Weltraums. <i>Astronomisches Jahrbuch</i>, 110–121.</div>
+<div><span class="lv a">进阶</span>Harrison, E. (1987). <i>Darkness at Night: A Riddle of the Universe</i>. Harvard University Press. —— 这个问题的完整史学梳理。</div>
+<div><span class="lv c">争议</span>Tolman, R. C. (1930). On the estimation of distances in a curved universe. <i>PNAS</i>, 16(7), 511–520. —— 表面亮度检验的源头。</div>
+</div>
+
+<div class="refs"><h3>引用与材料</h3><ol>
+<li>Olbers, H. W. M. (1826). Über die Durchsichtigkeit des Weltraums. <i>Astronomisches Jahrbuch</i>, 110–121.</li>
+<li>Kepler, J. (1610). 致伽利略的信，讨论夜空为何黑暗。</li>
+<li>Tolman, R. C. (1930). On the estimation of distances in a curved universe with a non-static line element. <i>PNAS</i>, 16(7), 511–520.</li>
+<li>Fixsen, D. J. (2009). The temperature of the cosmic microwave background. <i>ApJ</i>, 707(2), 916–920.</li>
+<li>Planck Collaboration (2020). Planck 2018 results VI: Cosmological parameters. <i>A&amp;A</i>, 641, A6.</li>
+<li>头图：NASA/JPL-Caltech，仙女座星系（PIA04921），公有领域。结构图为本文绘制，非实测数据。</li>
+</ol></div>
+
+<div class="archive"><b>归档</b>　W01 天文 ／ 宇宙学 ／ 观测约束　·　检索词：夜空、奥伯斯、红移、CMB、表面亮度<br>
+<b>系列</b>　第 1 周「尺度与佯谬」共 5 篇，本文为第 1 篇　·　下一篇 W01-D2 恒星的颜色是一支温度计</div>
+
+</div></body></html>
