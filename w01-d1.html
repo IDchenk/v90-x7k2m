@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>W01-D1 夜空为什么是黑的</title>
+<title>W01-D1 夜空是被时间熄掉的</title>
 <style>
 :root{--paper:#faf8f4;--ink:#1a1815;--muted:#6f6a62;--acc:#b03a2e;--line:#ddd6c9;--soft:#f2ede3;}
 *{box-sizing:border-box;}
@@ -10,7 +10,8 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system
 .top{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--line);
      padding-bottom:12px;margin-bottom:22px;font-size:12px;letter-spacing:.1em;color:var(--muted);}
 .top .l{color:var(--acc);font-weight:700;}
-h1{font-size:30px;line-height:1.45;margin:0 0 14px;font-weight:700;}
+h1{font-size:31px;line-height:1.44;margin:0 0 14px;font-weight:700;}
+h2{font-size:19px;margin:36px 0 12px;font-weight:700;}
 .tags{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 22px;}
 .tags span{font-size:11.5px;color:#6b5f4e;background:var(--soft);border:1px solid var(--line);
            border-radius:20px;padding:3px 10px;}
@@ -18,27 +19,23 @@ h1{font-size:30px;line-height:1.45;margin:0 0 14px;font-weight:700;}
 p{margin:0 0 19px;text-align:justify;}
 strong{font-weight:700;color:#000;}
 em{font-style:normal;background:linear-gradient(transparent 60%,#f0d9d3 60%);padding:0 1px;}
+.first::first-letter{font-size:52px;float:left;line-height:.86;padding:6px 10px 0 0;color:var(--acc);font-weight:700;}
 figure{margin:26px 0;}
 figure img{width:100%;border-radius:4px;display:block;background:#fff;}
 figcaption{font-size:12px;color:var(--muted);margin-top:9px;line-height:1.6;}
 figure.svgfig{background:#fdfcf9;border-radius:4px;padding:14px 8px;margin:26px 0;}
 figure.svgfig svg{width:100%;height:auto;display:block;}
-.against{background:var(--soft);padding:20px 22px;margin:28px 0;border-radius:3px;border-left:3px solid #9c8f7a;}
-.against .tag,.judge .tag,.open .tag,.ask .tag,.terms .tag,.more .tag{font-size:11px;letter-spacing:.15em;font-weight:700;display:block;margin-bottom:9px;}
-.against .tag{color:#7a6d58;} .against p:last-child{margin-bottom:0;}
-.judge{border-top:2px solid var(--ink);border-bottom:1px solid var(--line);padding:20px 0;margin:30px 0;font-size:18px;}
-.judge .tag{color:var(--acc);}
-.open{border:1px dashed #b8ad99;padding:20px 22px;margin:28px 0;border-radius:3px;}
-.open .tag{color:#8a7d66;} .open p:last-child{margin-bottom:0;}
 .terms{border:1px solid var(--line);border-radius:6px;padding:20px 20px 6px;margin:30px 0;background:#fff;}
+.terms .tag,.more .tag,.task .tag{font-size:11px;letter-spacing:.15em;font-weight:700;display:block;margin-bottom:9px;}
 .terms .tag{color:var(--acc);}
 .term{padding:0 0 12px;margin:0 0 12px;border-bottom:1px dashed var(--line);}
 .term:last-child{border-bottom:none;}
 .term .zh{font-size:15px;font-weight:700;}
 .term .en{font-size:12px;color:#8a7d66;font-style:italic;margin-left:5px;}
 .term .def{font-size:13.5px;color:#565049;line-height:1.7;margin-top:2px;}
-.ask{background:#1f1c18;color:#f6f2ea;padding:24px;margin:32px 0;border-radius:5px;}
-.ask .tag{color:#e0897c;} .ask p{margin:0;color:#f6f2ea;font-size:17px;line-height:1.9;}
+.task{margin:30px 0;padding:18px 20px;background:#fff;border:1px solid var(--line);border-radius:6px;}
+.task .tag{color:#6b8a63;}
+.task p{margin:0;font-size:14px;line-height:1.85;color:#4a453e;}
 .more{margin:30px 0;padding:16px 18px;background:#fff;border:1px solid var(--line);border-radius:6px;}
 .more .tag{color:var(--acc);}
 .more div{font-size:13px;line-height:1.75;color:#4a453e;margin-bottom:7px;}
@@ -50,106 +47,166 @@ figure.svgfig svg{width:100%;height:auto;display:block;}
 .refs li{margin-bottom:4px;}
 .archive{margin-top:22px;padding:13px 15px;background:var(--soft);border-radius:4px;font-size:11.5px;color:#6b6255;line-height:1.75;}
 .archive b{color:#3f382e;}
-a{color:var(--acc);}
+.endnote{margin-top:30px;padding-top:18px;border-top:1px dashed var(--line);color:var(--muted);font-size:15px;}
 </style></head><body><div class="wrap">
 
-<div class="top"><span class="l">W01 · D1　天文・宇宙学　【中】</span><span>约 1500 字 · 9 分钟</span></div>
+<div class="top"><span class="l">W01 · D1　天文・宇宙学　【重】</span><span>约 2600 字 · 15 分钟</span></div>
 
-<h1>夜空为什么是黑的</h1>
-<div class="tags"><span># 奥伯斯佯谬</span><span># 表面亮度</span><span># 红移</span><span># 宇宙学</span></div>
-<p class="lede">这个问题有正确答案，但流传更广的是那个错误答案。它真正教给我们的，不是宇宙学，是「什么算一个解释」。</p>
+<h1>夜空是被时间<br>熄掉的</h1>
+<div class="tags"><span># 奥伯斯佯谬</span><span># 表面亮度</span><span># 红移</span><span># 爱伦·坡</span></div>
+<p class="lede">一个眼科医生在阁楼上算出一件事：如果宇宙是无限的，夜空应该亮得像太阳表面。这个推论困扰了物理学一百多年，最后给出近似答案的，是个写恐怖小说的。</p>
+
+<p class="first">1823 年冬天，德国不来梅。一个六十五岁的眼科医生每晚爬上自家阁楼，把望远镜对准天空。他叫海因里希·奥伯斯，白天给人看眼睛，晚上数星星。那年他写了一篇很短的论文，题目朴素得近乎无趣：《论太空的透明性》。</p>
+
+<p>文章里没有新观测，没有新仪器，只有一个推论。</p>
+
+<p>他说：假设星星均匀铺在无限的空间里，而且宇宙已经存在了无限久。那么不管你往哪个方向看，把视线一直延长下去，迟早会撞上一颗恒星的表面。因为距离越远，那一层球壳的体积越大，里面的星也越多，多到足以把整个天空填满。</p>
+
+<p>于是每一条视线都有终点。整个天穹被恒星表面铺满，亮度不低于太阳表面。</p>
+
+<p>不是「有很多星星」。是<strong>整个天空就是一颗星</strong>。</p>
 
 <figure>
 <img src="https://images-assets.nasa.gov/image/PIA04921/PIA04921~medium.jpg" alt="仙女座星系">
-<figcaption>仙女座星系，距离约 250 万光年。NASA/JPL-Caltech</figcaption>
+<figcaption>仙女座星系，约 250 万光年。照片里每一个亮点，都是一个太阳系规模的恒星系统。NASA/JPL-Caltech</figcaption>
 </figure>
 
-<p>先把它说严格。设想一个无限大、均匀、永恒、静止的宇宙。你站在其中，向任意方向看，视线延长出去，迟早会落在一颗恒星的表面——因为恒星均匀分布，视线扫过的体积随距离立方增长，恒星数量也随立方增长，两者恰好抵消。于是每一条视线都终结于一颗恒星，整个天空被恒星表面铺满，亮度不低于太阳表面。夜空应该亮到看不见单颗星星，地球应该被烤干。</p>
+<p>这个推论当时没引起什么反响。物理学还没有工具处理它——热力学还在发育，光谱学刚起步，没人知道宇宙有多大，更没人知道它在膨胀。</p>
 
-<p>这是奥伯斯在 1823 年写下的推论。在此之前，开普勒在 1610 年致伽利略的信里已经注意到了这个问题，但他给的答案也不对。</p>
+<p>奥伯斯也不是第一个想到的人。1610 年，开普勒给伽利略写过一封信，说他夜里琢磨这件事，睡不着。他给的答案是「宇宙是有限的」——那不是解释，是绕开。</p>
 
-<p>最流行的错误答案是：星际尘埃挡住了远处的光。这个解释我高中时也信，直到知道尘埃被照亮以后自己也会发光。</p>
+<p>真正让我意外的，是下一个出场的人。</p>
 
-<p>尘埃吸收光子会升温，升温后辐射。它挡得住可见光，挡不住红外。你没法用「遮挡」消灭能量，只能转移它。</p>
+<p>1848 年，埃德加·爱伦·坡出版了一本散文诗集，叫《我发现了》。他写恐怖小说出名，那本书却是一套自造的宇宙论，错的地方很多。但有一段是对的，大意是：如果星辰的序列无限延伸，天空的背景本该是一片均匀的光；我们看到的黑暗，是因为最远那些星的光还没走到我们这里。</p>
 
-<p>正确答案有两半，而教科书通常只讲一半。</p>
+<p>他没做计算，没引数据，用的是想象力。而这个答案，科学界要到二十世纪才正式接受。</p>
 
-<p><strong>第一半：宇宙有年龄。</strong>约 138 亿年，光只来得及走这么远，可观测宇宙是有限的。<strong>第二半：宇宙在膨胀。</strong>远方天体发出的光被红移，光子能量按 (1+z) 摊薄，而表面亮度按 (1+z)⁴ 衰减。</p>
+<h2>尘埃不是答案</h2>
 
-<p>只讲第一半，你会遇到一个尴尬：如果只是「有限但很大」，靠近边缘的恒星应该显得很亮，夜空仍不该这么黑。是红移把亮度按下去了。</p>
+<p>中间一百年，最流行的解释是：星际尘埃把远处的光挡住了。</p>
 
-<figure class="svgfig">
-<svg viewBox="0 0 620 272" xmlns="http://www.w3.org/2000/svg">
-  <text x="46" y="36" font-family="serif" font-size="16" fill="#1a1815">同样是「一格天区」，远处的星更多</text>
-  <text x="46" y="56" font-family="sans-serif" font-size="9.5" fill="#9a917f" letter-spacing="1">EQUAL SOLID ANGLE</text>
+<p>这个解释我高中时也信过。它错在能量守恒。</p>
 
-  <rect x="56" y="86" width="168" height="120" fill="none" stroke="#ddd6c9" stroke-width="1" stroke-dasharray="5 4"/>
-  <circle cx="140" cy="146" r="27" fill="#b03a2e" opacity="0.9"/>
-  <text x="140" y="226" text-anchor="middle" font-family="serif" font-size="11" fill="#6f6a62">距离 d</text>
+<p>尘埃吸收光子会升温，升温后自己也要辐射。它挡得住可见光，挡不住红外。你没法用「遮挡」消灭能量，只能把它挪到另一个波段。所以尘埃越多，夜空在红外波段就越亮——不是熄灭了，是换了个颜色继续亮。</p>
 
-  <line x1="246" y1="146" x2="352" y2="146" stroke="#ddd6c9" stroke-width="1"/>
-  <polygon points="352,146 344,142 344,150" fill="#ddd6c9"/>
-  <text x="299" y="137" text-anchor="middle" font-family="serif" font-size="11" fill="#9a917f">2d</text>
+<p>凡是靠「挡住了」来解释宇宙学问题的，基本都可以先怀疑一下。</p>
 
-  <rect x="386" y="86" width="168" height="120" fill="none" stroke="#ddd6c9" stroke-width="1" stroke-dasharray="5 4"/>
-  <circle cx="414" cy="120" r="9" fill="#b03a2e" opacity="0.85"/>
-  <circle cx="466" cy="112" r="8" fill="#b03a2e" opacity="0.85"/>
-  <circle cx="500" cy="158" r="9" fill="#b03a2e" opacity="0.85"/>
-  <circle cx="440" cy="176" r="8" fill="#b03a2e" opacity="0.85"/>
-  <circle cx="524" cy="114" r="7" fill="#b03a2e" opacity="0.85"/>
-  <text x="470" y="226" text-anchor="middle" font-family="serif" font-size="11" fill="#6f6a62">距离 2d</text>
-
-  <line x1="46" y1="242" x2="574" y2="242" stroke="#e5dfd2" stroke-width="1"/>
-  <text x="46" y="260" font-family="serif" font-size="11.5" fill="#b03a2e">单颗暗到四分之一，但数量多四倍。每一格的总亮度不变。</text>
+<figure class="svgfig"><svg viewBox="0 0 620 236" xmlns="http://www.w3.org/2000/svg">
+  <text x="46" y="36" font-family="serif" font-size="16" fill="#1a1815">视线无限延长，总会撞上一颗星</text>
+  <text x="46" y="55" font-family="sans-serif" font-size="9.5" fill="#9a917f" letter-spacing="1">LINE OF SIGHT, INFINITE UNIVERSE</text>
+  <line x1="66" y1="112" x2="556" y2="112" stroke="#e5dfd2" stroke-width="1"/>
+  <circle cx="96" cy="112" r="3.4" fill="#8a7d66" opacity="0.55"/>
+  <circle cx="132" cy="112" r="3.3" fill="#8a7d66" opacity="0.55"/>
+  <circle cx="163" cy="112" r="3.2" fill="#8a7d66" opacity="0.55"/>
+  <circle cx="189" cy="112" r="3.1" fill="#8a7d66" opacity="0.55"/>
+  <circle cx="212" cy="112" r="3.0" fill="#8a7d66" opacity="0.55"/>
+  <circle cx="232" cy="112" r="2.9" fill="#8a7d66" opacity="0.55"/>
+  <circle cx="250" cy="112" r="2.8" fill="#8a7d66" opacity="0.55"/>
+  <circle cx="266" cy="112" r="2.7" fill="#8a7d66" opacity="0.55"/>
+  <circle cx="281" cy="112" r="2.6" fill="#8a7d66" opacity="0.55"/>
+  <circle cx="294" cy="112" r="2.5" fill="#8a7d66" opacity="0.55"/>
+  <circle cx="306" cy="112" r="2.4" fill="#8a7d66" opacity="0.55"/>
+  <circle cx="317" cy="112" r="2.3" fill="#8a7d66" opacity="0.55"/>
+  <circle cx="327" cy="112" r="2.3" fill="#8a7d66" opacity="0.55"/>
+  <circle cx="336" cy="112" r="2.2" fill="#8a7d66" opacity="0.55"/>
+  <circle cx="345" cy="112" r="2.1" fill="#8a7d66" opacity="0.55"/>
+  <circle cx="353" cy="112" r="2.1" fill="#8a7d66" opacity="0.55"/>
+  <circle cx="360" cy="112" r="2.0" fill="#8a7d66" opacity="0.55"/>
+  <circle cx="367" cy="112" r="2.0" fill="#8a7d66" opacity="0.55"/>
+  <circle cx="373" cy="112" r="1.9" fill="#8a7d66" opacity="0.55"/>
+  <circle cx="379" cy="112" r="1.9" fill="#8a7d66" opacity="0.55"/>
+  <circle cx="384" cy="112" r="1.8" fill="#8a7d66" opacity="0.55"/>
+  <circle cx="389" cy="112" r="1.8" fill="#8a7d66" opacity="0.55"/>
+  <circle cx="394" cy="112" r="1.7" fill="#8a7d66" opacity="0.55"/>
+  <circle cx="398" cy="112" r="1.7" fill="#8a7d66" opacity="0.55"/>
+  <circle cx="402" cy="112" r="1.6" fill="#8a7d66" opacity="0.55"/>
+  <circle cx="406" cy="112" r="1.6" fill="#8a7d66" opacity="0.55"/>
+  <circle cx="410" cy="112" r="1.5" fill="#8a7d66" opacity="0.55"/>
+  <circle cx="414" cy="112" r="1.5" fill="#8a7d66" opacity="0.55"/>
+  <circle cx="417" cy="112" r="1.4" fill="#8a7d66" opacity="0.55"/>
+  <circle cx="421" cy="112" r="1.4" fill="#8a7d66" opacity="0.55"/>
+  <circle cx="424" cy="112" r="1.4" fill="#8a7d66" opacity="0.55"/>
+  <circle cx="427" cy="112" r="1.4" fill="#8a7d66" opacity="0.55"/>
+  <circle cx="430" cy="112" r="1.4" fill="#8a7d66" opacity="0.55"/>
+  <circle cx="66" cy="112" r="5" fill="#1a1815"/>
+  <text x="66" y="136" text-anchor="middle" font-family="serif" font-size="10.5" fill="#6f6a62">你</text>
+  <circle cx="556" cy="112" r="14" fill="#b03a2e" opacity="0.9"/>
+  <text x="556" y="146" text-anchor="middle" font-family="serif" font-size="10.5" fill="#b03a2e">星表面</text>
+  <text x="200" y="88" font-family="serif" font-size="10" fill="#9a917f">近处稀疏</text>
+  <text x="430" y="88" font-family="serif" font-size="10" fill="#9a917f">远处密集</text>
+  <line x1="46" y1="176" x2="574" y2="176" stroke="#e5dfd2" stroke-width="1"/>
+  <text x="46" y="198" font-family="serif" font-size="11.5" fill="#b03a2e">距离每增加一倍，视野里的星多四倍。稀疏与密集相抵，每条视线都有终点。</text>
 </svg>
+<figcaption>距离每翻一倍，同一视角内的星数变成四倍，但每颗星也更暗。两者相抵，天区总亮度不变。</figcaption></figure>
 
-<figcaption>同样的视角大小，远处看到的星更多、更暗。两者相抵，天区总亮度不变——这才是「夜空该是亮的」的严格版本。</figcaption></figure>
+<h2>答案有两半，教科书只讲一半</h2>
 
-<p>这里有个精确的反转：严格说夜空并不是黑的。它有一个 2.725 K 的背景——宇宙微波背景。只是不在可见光波段。所以准确的表述是：<em>夜空在可见光波段是暗的，在微波波段是亮的，而且亮得极其均匀。</em></p>
+<p><strong>第一半：宇宙有年龄。</strong>大约 138 亿年。光只来得及走这么远，可观测宇宙是有限的。爱伦·坡说的就是这一半。</p>
 
-<div class="against"><span class="tag">替反方说话</span>
-<p>有人说这是伪问题：前提本来就不成立（宇宙并非无限、永恒、静止），所以谈不上「佯谬」。这个反驳在逻辑上完全成立，但它抹掉了这件事的价值。它的价值不在「揭示矛盾」，而在提供了一个<strong>观测约束</strong>——用「夜空有多亮」这个每晚都看得见的事实，去限制宇宙模型的参数。用日常现象约束宏大模型，这是物理学最漂亮的手法之一。</p>
-</div>
+<p><strong>第二半：宇宙在膨胀。</strong>远方的光被拉长，光子能量摊薄，表面亮度按 (1+z)⁴ 衰减。这一半常被跳过。</p>
 
-<div class="judge"><span class="tag">我的判断</span>
-这个问题的教益不在宇宙学，在方法论：它示范了<strong>如何把一个背景变成问题</strong>。夜空是黑的，人类看了几十万年，没人觉得需要解释，直到有人问「为什么不是亮的」。科学史上相当一部分进步，来自把习以为常的东西重新当成待解释的现象。反过来也成立：一个人如果从不觉得身边有什么奇怪，他的思考就停在「背景」这一层，进不到「问题」。
-</div>
+<p>跳过它，会留一个尴尬：如果只是「有限但很大」，那么靠近边缘的恒星应该显得很亮，夜空仍然不该这么黑。把亮度真正按下去的，是红移。</p>
 
-<div class="open"><span class="tag">我没想清的地方</span>
-<p>为什么教科书普遍只讲「宇宙有年龄」，几乎不提红移那一半？表面理由是教学成本，(1+z)⁴ 需要一点广义相对论的铺垫。但我觉得还有一层：我们习惯用<strong>边界</strong>解释问题（有限、有起点），不习惯用<strong>度规</strong>解释问题（空间本身在变）。前者是常识语言，后者要换一套坐标。这可能不只是物理教学的偏好，而是认知的默认设置——人喜欢墙，不喜欢尺子会伸缩。</p>
-</div>
+<p>两半合起来，夜空才是黑的。</p>
+
+<h2>一个反转</h2>
+
+<p>严格说，夜空并不黑。</p>
+
+<p>它有一个 2.725 K 的辐射背景，来自宇宙诞生三十八万年后的那一刻——等离子体冷却成中性原子，光终于可以自由传播。那束光走了 138 亿年，被膨胀拉长一千倍，从可见光变成微波。</p>
+
+<figure>
+<img src="https://images-assets.nasa.gov/image/PIA16873/PIA16873~medium.jpg" alt="宇宙微波背景全天图">
+<figcaption>普朗克卫星绘制的全天微波图。那些斑点是十万分之一的温度起伏，后来的星系都长在这些起伏上。ESA/Planck</figcaption>
+</figure>
+
+<p>所以每晚抬头看到的黑，只是眼睛的波段太窄。换成微波的眼睛，整个天空亮得刺眼，而且均匀到只差十万分之一——这张图至今是宇宙学最精确的一张。</p>
+
+<h2>我的看法</h2>
+
+<p>奥伯斯这篇论文的价值，不在宇宙学，在方法。</p>
+
+<p>夜空是黑的，人类看了几十万年，没人觉得这件事需要解释。直到有人问：它<em>为什么不是亮的</em>。</p>
+
+<p>把背景当成问题，这一步比答案重要。科学史上相当一部分进展，都是从「这有什么好奇怪的」变成「这确实奇怪」开始的。</p>
+
+<p>反过来也成立。一个人如果从不觉得身边有什么奇怪，他的思考就停在背景那一层，进不到问题。</p>
+
+<p>我后来在工作中体会更深。报告里的默认假设、沿用十年的口径、一句「历来如此」，都是背景。它们不出问题的时候没人问，出问题的时候才发现，从来没人验证过。</p>
+
+<p class="endnote">我用了很多年「看远处就是看过去」这句话。直到某天意识到，它默认了一个并不存在的「现在」。</p>
+
+<div class="task"><span class="tag">动手 · 5 分钟</span>
+<p>打开 <b>images.nasa.gov</b>，搜索框里输入你的生日（比如 <i>March 12</i>），看那天 NASA 发布了什么图。多数日子都有。挑一张你看不懂的，把它是什么查清楚——这比再读三篇科普有用。</p></div>
 
 <div class="terms"><span class="tag">术语锚点</span>
 <div class="term"><span class="zh">奥伯斯佯谬</span><span class="en">Olbers' paradox</span>
-<div class="def">夜空亮度与「静态无限宇宙」模型的矛盾。Olbers 于 1823 年正式提出，开普勒 1610 年已注意到。</div></div>
+<div class="def">夜空亮度与「静态无限宇宙」模型的矛盾。奥伯斯 1823 年提出，1826 年发表；开普勒 1610 年已在信中注意到。</div></div>
 <div class="term"><span class="zh">表面亮度</span><span class="en">surface brightness</span>
-<div class="def">单位立体角内的辐射通量。静态欧氏空间中与距离无关，是判断「距离—红移」关系的核心量，参见 Tolman 表面亮度检验（1930）。</div></div>
+<div class="def">单位立体角内的辐射通量。静态欧氏空间中与距离无关，是判断「距离—红移」关系的核心量，参见 Tolman 检验（1930）。</div></div>
 <div class="term"><span class="zh">红移</span><span class="en">redshift z</span>
 <div class="def">1+z = λ观测/λ发射。膨胀宇宙中表面亮度按 (1+z)⁴ 衰减：两个因子来自能量降低，两个来自时间膨胀与波段变窄。</div></div>
 <div class="term"><span class="zh">宇宙微波背景</span><span class="en">CMB</span>
-<div class="def">温度 2.72548 ± 0.00057 K 的黑体辐射（Fixsen 2009），宇宙早期复合时期遗留，是「夜空其实是亮的」在物理上的落点。</div></div>
-</div>
-
-<div class="ask"><span class="tag">给你的问题</span>
-<p>如果夜空是被「时间」变黑的，不是被「距离」变暗的——那么「看远处就是看过去」这句话，在什么意义上会误导人？</p>
+<div class="def">温度 2.72548 ± 0.00057 K 的黑体辐射（Fixsen 2009）。1965 年由彭齐亚斯与威尔逊偶然发现，两人因此获诺贝尔奖。</div></div>
 </div>
 
 <div class="more"><span class="tag">延伸</span>
 <div><span class="lv">原始</span>Olbers, H. W. M. (1826). Über die Durchsichtigkeit des Weltraums. <i>Astronomisches Jahrbuch</i>, 110–121.</div>
-<div><span class="lv a">进阶</span>Harrison, E. (1987). <i>Darkness at Night: A Riddle of the Universe</i>. Harvard University Press. —— 这个问题的完整史学梳理。</div>
+<div><span class="lv a">进阶</span>Harrison, E. (1987). <i>Darkness at Night: A Riddle of the Universe</i>. Harvard UP. —— 这个问题的完整史学，含爱伦·坡那一节。</div>
 <div><span class="lv c">争议</span>Tolman, R. C. (1930). On the estimation of distances in a curved universe. <i>PNAS</i>, 16(7), 511–520. —— 表面亮度检验的源头。</div>
 </div>
 
 <div class="refs"><h3>引用与材料</h3><ol>
 <li>Olbers, H. W. M. (1826). Über die Durchsichtigkeit des Weltraums. <i>Astronomisches Jahrbuch</i>, 110–121.</li>
 <li>Kepler, J. (1610). 致伽利略的信，讨论夜空为何黑暗。</li>
+<li>Poe, E. A. (1848). <i>Eureka: A Prose Poem</i>. 关于夜空黑暗的段落在该书后半部分；本文为转述，非直引。</li>
 <li>Tolman, R. C. (1930). On the estimation of distances in a curved universe with a non-static line element. <i>PNAS</i>, 16(7), 511–520.</li>
 <li>Fixsen, D. J. (2009). The temperature of the cosmic microwave background. <i>ApJ</i>, 707(2), 916–920.</li>
 <li>Planck Collaboration (2020). Planck 2018 results VI: Cosmological parameters. <i>A&amp;A</i>, 641, A6.</li>
-<li>头图：NASA/JPL-Caltech，仙女座星系（PIA04921），公有领域。结构图为本文绘制，非实测数据。</li>
+<li>图片：NASA/JPL-Caltech（PIA04921）、ESA/Planck（PIA16873），公有领域。结构图由本文绘制。</li>
 </ol></div>
 
-<div class="archive"><b>归档</b>　W01 天文 ／ 宇宙学 ／ 观测约束　·　检索词：夜空、奥伯斯、红移、CMB、表面亮度<br>
-<b>系列</b>　第 1 周「尺度与佯谬」共 5 篇，本文为第 1 篇　·　下一篇 W01-D2 恒星的颜色是一支温度计</div>
+<div class="archive"><b>归档</b>　W01 天文 ／ 宇宙学 ／ 观测约束　·　检索词：夜空、奥伯斯、红移、CMB、爱伦·坡<br>
+<b>系列</b>　W01-D1　·　下一篇 W01-D2 恒星的颜色是一支温度计</div>
 
 </div></body></html>
